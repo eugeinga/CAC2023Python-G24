@@ -1,0 +1,72 @@
+:root {
+    --color-uno: #D61355;
+    --color-dos: #F94A29;
+    --color-tres: #FCE22A;
+    --color-cuatro: #30E3DF;
+    --color-cinco: #0F1020;
+    --color-seis: #DD6E42;
+    --color-siete: #BEE7E8;
+}
+
+html{
+    background-color:var(--color-siete);
+}
+
+body {
+    padding-top: 20px;
+}
+
+.div-header {
+    display:flex;
+    position: relative;
+    background-color: var(--color-dos);
+    justify-content:center;
+}
+
+.div-botones{
+    display:flex;
+    position: relative;
+    background-color: var(--color-dos);
+    justify-content:space-between;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+nav {
+    position: fixed;
+    top: 40px;
+    bottom: 60px;
+    left: -250px;
+    width: 200px;
+    height: 80vh;
+    background-color:var(--color-tres);
+    transition: all 0.3s ease;
+    border-radius: 8%;
+    z-index: 1
+}
+
+.div-article {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 90% 30%;
+    grid-gap: 10px;
+    width: 80%;
+    margin: 0%;
+}
+
+section,
+aside {
+
+    padding: 20px 5px 10px 5px;
+    margin-left: 10px;
+    background-color: var(--color-seis);
+} 
+
+.div-footer{
+    display:flex;
+    width: 100%;
+    background-color: var(--color-dos);
+    position: relative;
+    justify-content:center;
+}

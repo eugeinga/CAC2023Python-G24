@@ -3,6 +3,12 @@ Codo a Codo 2023 - Full Stack Python - Grupo 24
 
 rama : V.Orlando
 
+17 Abril 2023 . Se Agrego paginas para El Proyecto Web
+
+* Se agrego : Acerca, Aprender, Bonus, Contacto, Ingresar 
+a medida de lo posible se moveran las estruturas  ya que se copio la misma estructuras del index y el mismo css . por cada hoja se creo una caperta donde la cual se optiene el css y el archivo javaS..
+
+
 15 Abril 2023 . Actualizacion de index.html - Version 1
 
 * Se estableció el diseño html con un poco de css para diferencial las etiquetas , los colores puede ser cambiados y se cambiaran en dicho momento no es Definitivo . 

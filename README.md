@@ -3,6 +3,8 @@ Codo a Codo 2023 - Full Stack Python - Grupo 24
 
 rama : V.Orlando
 
+* Se agrego la funcion de onmouseover en el Boton para invocar la nav .
+
 17 Abril 2023 . Se Agrego paginas para El Proyecto Web
 
 * Se agrego : Acerca, Aprender, Bonus, Contacto, Ingresar 

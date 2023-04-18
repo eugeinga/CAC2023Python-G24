@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>EducaKids</title>
+	<title>EducaKids-Inicio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descripción breve de tu sitio web">
@@ -9,24 +9,34 @@
     <meta name="author" content="Tu nombre o el nombre de tu organización">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/javas.js"></script>
+    <!-- Aqui inicia las llamadas de fontawesome -->
+    <link href="fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <!-- Aqui finaliza las llamadas de font awesome -->
 </head>
 <body>
     <div class="div-Principal">
         <div class="div-header" >
             <header><h1 align="center">EducaKids</h1>
+                <!-- <img src="" alt="Logo de mi sitio web"> -->
         </header></div>
         <div class="div-botones">
-            <p><button class="boton-menu" id="boton-menu" onclick="mostrarMenu()">Menu</button></p>
-            <p class="boton-registro" ><a href="Ingresar/Ingresar.html">Ingresar</a></p>
+            <p><a href="#" onmouseover="mostrarMenu()" title="Abrir Menu"><i class="fa-solid fa-bars fa-bounce fa-2x"></i></a></p>
+            
+            <p><a href="Ingresar/Ingresar.html" title="Registrar"><i class="fa-regular fa-user fa-2x"></i></a></p>
         </div>
             <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Aprender/Aprender.html">Aprender</a></li>
-                <li><a href="Acerca/Acerca.html">Acerca de</a></li>
-                <li><a href="Bonus/Bonus.html">Bonus</a></li>
-                <li><a href="Contacto/Contacto.html">Contacto</a></li>
-                <li><button id="boton-menu" onclick="mostrarMenu()">Ocultar Menu</button></li>
+            <ul style="list-style: none;">
+                <li><i class="fa-solid fa-house-chimney "><a href="index.html" title="Inicio">Inicio</a></i></li>
+                <li><i class="fa-solid fa-chalkboard-user"><a href="Aprender/Aprender.html" title="Aprender">Aprender</a></i></li>
+                <li><i class="fa-regular fa-briefcase"><a href="Acerca/Acerca.html" title="Acerca de">Acerca de</a></i></li>
+                <!-- Ejemplo de comoagregar un inconode fontawesome con otro color
+                <i class="fa-solid fa-hands-holding-circle" style="color: #26a269;"></i>
+                -->
+                <li><i class="fa-solid fa-hands-holding-circle"><a href="Bonus/Bonus.html" title="Bonus">Bonus</a></i></li>
+                <li><i class="fa-solid fa-comment-dots"><a href="Contacto/Contacto.html" title="Contacto">Contacto</a></i></li>
+                <li><a href="#" id="boton-menu" onmouseover="mostrarMenu()" title="Esconder Menu"><i class="fa-solid fa-arrow-left fa-bounce"></i></a></li>
                 <!--Enlaces para Matemáticas , Lengua y Geografía estaran en la Pagina Aprender -->
             </ul>
         </nav>
@@ -34,18 +44,55 @@
             <article>
                 <section>
                     <h2>Contenido del artículo</h2>
-                    <p>Este es el contenido principal del artículo.</p>
+                    <p>Bienvenidos a EducaKids, una plataforma de aprendizaje diseñada especialmente para niños y niñas de 5 a 8 años de edad. En EducaKids, nuestra misión es hacer que el aprendizaje sea divertido y emocionante para los más pequeños, fomentando su curiosidad y ayudándoles a desarrollar habilidades esenciales que les serán útiles en su vida académica y personal.
+
+                        En nuestra página web, encontrarás una amplia variedad de recursos educativos y actividades, cuidadosamente seleccionados y diseñados por expertos en educación infantil. Desde juegos didácticos y videos educativos hasta actividades interactivas y ejercicios para imprimir, EducaKids ofrece una experiencia de aprendizaje completa e integrada que se adapta a las necesidades y preferencias de cada niño.
+                        
+                        Nos enfocamos en enseñar las habilidades básicas de lectura, escritura y matemáticas, así como también en fomentar la creatividad, el pensamiento crítico y el trabajo en equipo. Además, todos nuestros contenidos están diseñados para ser accesibles, amigables y atractivos para los niños, lo que los hace divertidos y entretenidos.
+                        
+                        En EducaKids, creemos que cada niño tiene su propio ritmo y estilo de aprendizaje, por lo que nuestra plataforma está diseñada para adaptarse a las necesidades individuales de cada estudiante. Nuestro objetivo es ayudar a los niños a aprender y a desarrollarse a su propio ritmo, y a medida que progresan en su aprendizaje, estarán listos para enfrentar nuevos desafíos y explorar nuevos conceptos.
+                        
+                        En resumen, EducaKids es la plataforma de aprendizaje perfecta para niños y niñas de 5 a 8 años de edad. Únete a nosotros y comienza a disfrutar de una experiencia educativa única y emocionante que ayudará a tus hijos a crecer y a desarrollarse en un ambiente seguro, interactivo y divertido. ¡Te esperamos en EducaKids!</p>
                 </section>
             </article>
             <aside>
-                <h2>Contenido del aside</h2>
-                <p>Este es el contenido del aside.</p>
+                <h2>Actividades divertidas</h2>
+                <ul style="list-style: none;" >
+                    <li><a href="#">Juego de memoria de animales</a></li>
+                    <li><a href="#">Laberinto de la jungla</a></li>
+                    <li><a href="#">Dibujos para colorear de dinosaurios</a></li>
+                    <li><a href="#">Proyectos de ciencias para hacer en casa</a></li>
+                </ul>
+                <h2>Cuentos infantiles</h2>
+                <ul style="list-style: none;">
+                    <li><a href="#">Caperucita Roja</a></li>
+                    <li><a href="#">La liebre y la tortuga</a></li>
+                    <li><a href="#">El patito feo</a></li>
+                    <li><a href="#">El león y el ratón</a></li>
+                </ul>
             </aside>
         </div>
         <div class="div-footer" align="center" ><footer>
-            <h2>Contenido del footer</h2>
-            <p >Este es el contenido del footer</p>
+            <p >Términos · Privacidad · Política del programa </p>
+            <br>
+            <p>
+            <a href="https://www.youtubekids.com/?hl=es" title="Youtubekids"><i class="fa-brands fa-youtube fa-2x "></i></a>
+            <a href="Contacto/Contacto.html" title="Contacto"><i class="fa-solid fa-comments fa-2x"></i></a>
+            <a href="#" title="Juegos"><i class="fa-solid fa-gamepad fa-2x"></i></a><!-- Esto sera un futuro enlace para los miniJuegos-->      
+        </p>
         </footer></div>
     </div>
 </body>
 </html>
+
+<!---
+    National Geographic Kids - https://kids.nationalgeographic.com/
+    PBS Kids - https://pbskids.org/
+    ABCmouse - https://www.abcmouse.com/
+    Funbrain - https://www.funbrain.com/
+    BrainPOP - https://www.brainpop.com/
+    Smithsonian Learning Lab - https://learninglab.si.edu/
+    Scholastic - https://www.scholastic.com/learnathome.html
+    ReadWriteThink - http://www.readwritethink.org/
+    NASA Kids' Club - https://www.nasa.gov/kidsclub/index.html
+-->

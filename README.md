@@ -3,6 +3,11 @@ Codo a Codo 2023 - Full Stack Python - Grupo 24
 
 rama : V.Orlando
 
+* Se Actualizo la Pagina Web, se establecio Fondos y se agrego la Calculadora
+
+21 de Abril  . Se establecio imagenes como fondos en diversos div, se reparo las enlaces en comun internos entre hojas html, se agrego la Calculadora .
+(Nota: Queda pendiente Agregar un Indice en La hoja Aprender .)
+
 * Se agrego la funcion de onmouseover en el Boton para invocar la nav .
 
 17 Abril 2023 . Se Agrego paginas para El Proyecto Web

@@ -1,28 +1,71 @@
+/* Importar la fuente */
+@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+/* Creamos Variable de colores para nuetro css */
 :root {
-    --color-uno: #D61355;
-    --color-dos: #F94A29;
-    --color-tres: #FCE22A;
-    --color-cuatro: #30E3DF;
-    --color-cinco: #0F1020;
-    --color-seis: #DD6E42;
-    --color-siete: #BEE7E8;
+    --color-1: #790d31;
+    --color-1-0: #d61354; /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
+    --color-2: #DD6E42;
+    --color-3: #F94A29;
+    --color-2-0: #DD6E4295;
+    --color-3-0: #F94A2995;
+    --color-4: #FCE22A;
+    --color-5: #BEE7E8;
+    --color-6: #30E3DF;
+    --color-7: #000000;
+    --color-8: #A9A9A9;
+    ---color-9: #D2B48C;
+    --color-10: #C0C0C0;
+    --color-11: #FFD700;
+    --color-12: #D3D3D3;
+    --color-13: #FFFFFF;
+    --color-14: #87CEEB;
+    --color-15: #00CED1;
+    --color-16: #00FF7F;
+    --color-17: #7FFF00;
+    --color-18: #FFE5B4;
+    --color-19: #FF69B4;
+    --color-20: #800080;
+    --color-21: #FFA500;
+    --color-22: #FF0000;
+    --color-23: #FFFF00;
+    --color-24: #00FF00;
+    --color-25: #0000FF;
+    --color-26: #E6E6FA;
 }
+
 
 * {
     padding: 5px;
     margin: 2px;
+    font-family: 'Schoolbell', cursive;
+    font-size: 20px;
+    font-style: var(--color-20);
+
+}
+
+body {
+    background-image: url('/img/fondos/221910.jpg');
+    /* background-size: cover;
+    background-position: center; */
 }
 
 
 .div-header {
     display:flex;
     position: relative;
-    background-image: linear-gradient(to bottom, var(--color-dos), var(--color-seis));
+    background-image: linear-gradient(to bottom, var(--color-1), var(--color-2));
     /* background-color: var(--color-dos); */
     justify-content:center;
     padding: 1px;
     margin: 1px;
-
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-image: url('/img/fondos/221807.jpg');
+    /* background-size: cover;
+    background-position: center; */
 }
 
 .div-botones{
@@ -40,15 +83,40 @@ nav {
     left: -250px;
     width: 200px;
     height: 50vh;
-    background-image: linear-gradient(to bottom, var(--color-dos), var(--color-seis));
-    /*background: linear-gradient(to bottom, #ff0000, #ff9900, #ffff00, #33cc33, #0066ff, #cc33ff);*/
-
-    transition: all 0.3s ease;
+    background-image: url('/img/fondos/221807.jpg');
+    transition: all 0.9s ease;
     border-radius: 8%;
     z-index: 1;
-
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px; 
+    background-image: url('/img/fondos/221895.jpg');
+    border: 10px solid transparent;
+    border-image: url('/img/fondos/221910.jpg') 30% round;
+    border-radius: 30px;
+}
+.nav-image {
+    position: absolute;
+    top: -20px;
+    right: -60px; /*ajusta esto según el tamaño de tu imagen*/
+    height: 110%;
+    border-radius: 0 30px 30px 0; /*para redondear solo el borde derecho*/
 }
 
+nav:hover {
+    background-color:var(--color-6);
+    transition: all 1.0s ease;
+}
+
+li:hover {
+    background-color:var(--color-15);
+    border-radius: 100px;
+    border-color: #000000;
+    border-width: 0.5px;
+    border-style: solid;
+}
+
+
+/* Aqui comienza el ccs de los nav y heard del html */
 .div-article {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -57,7 +125,7 @@ nav {
     grid-gap: 10px;
     width: 80%;
     margin: 0%;
-
+    border-radius: 20px;
 }
 
 section,
@@ -65,16 +133,32 @@ aside {
 
     padding: 20px 5px 1px 5px;
     margin-left: 10px;
-    background-color: var(--color-seis);
+    background-image: linear-gradient(to bottom, var(--color-3), var(--color-4));
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    background-image: url('/img/fondos/221895.jpg');
+    border: 10px solid transparent;
+    border-image: url('/img/fondos/221910.jpg') 30% round;
+    border-radius: 30px;
+    /* background-size: cover;
+    background-position: center; */
 } 
 
 .div-footer{
     display:flex;
     width: 100%;
-    background-image: linear-gradient(to bottom, var(--color-dos), var(--color-seis));
+    background-image: linear-gradient(to bottom, var(--color-4), var(--color-5));
     /*background-color: var(--color-dos);*/
     position: relative;
     justify-content:center;
     padding: 0;
     margin: 0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-image: url('/img/fondos/221807.jpg');
+    
+    /* background-size: cover;
+    background-position: center; */
 }

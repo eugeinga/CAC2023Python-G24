@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>EducaKids-Aprender</title>
+	<title>EducaKids - Bonus</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descripción breve de tu sitio web">
-    <meta name="keywords" content="Palabras clave relevantes para tu sitio web">
-    <meta name="author" content="Tu nombre o el nombre de tu organización">
+    <meta name="description" content="Nuestro sitio web está diseñado para ayudar a los niños a aprender mientras se divierten. Encuentra recursos educativos divertidos y estimulantes para tus hijos.">
+    <meta name="keywords" content="EducaKids">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/javas.js"></script>
+    <!-- Aqui inicia las llamadas de fontawesome -->
+    <link href="/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <link rel="icon" href="/img/icono.png">
+    <!-- Aqui finaliza las llamadas de font awesome -->
 </head>
 <body>
     <div class="div-Principal">
         <div class="div-header" >
-            <header><h1 align="center">EducaKids</h1>
-        </header></div>
+            <header>
+                <h1 align="center">EducaKids</h1>
+                <!-- <img src="" alt="Logo de mi sitio web"> -->
+            </header></div>
         <div class="div-botones">
-            <p><button class="boton-menu" id="boton-menu" onclick="mostrarMenu()">Menu</button></p>
-            <p class="boton-registro" ><a href="Ingresar/Ingresar.html">Ingresar</a></p>
+            <p><a href="#" onmouseover="mostrarMenu()" title="Abrir Menu"><i class="fa-solid fa-bars fa-bounce fa-2x"></i></a></p>
+            
+            <p><a href="/Ingresar/Ingresar.html" title="Registrar"><i class="fa-regular fa-user fa-2x"></i></a></p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../Aprender/Aprender.html">Aprender</a></li>
-                <li><a href="../Acerca/Acerca.html">Acerca de</a></li>
-                <li><a href="Bonus.html">Bonus</a></li>
-                <li><a href="../Contacto/Contacto.html">Contacto</a></li>
-                <li><button id="boton-menu" onclick="mostrarMenu()">Ocultar Menu</button></li>
-                <!--Enlaces para Matemáticas , Lengua y Geografía estaran en la Pagina Aprender -->
-            </ul>
+            <nav>
+                <ul style="list-style: none;">
+                    <li><i class="fa-solid fa-house-chimney "><a href="/index.html" title="Inicio">Inicio</a></i></li>
+                    <li><i class="fa-solid fa-chalkboard-user"><a href="/Aprender/Aprender.html" title="Aprender">Aprender</a></i></li>
+                    <li><i class="fa-regular fa-briefcase"><a href="/Acerca/Acerca.html" title="Acerca de">Acerca de</a></i></li>
+                    <li><i class="fa-solid fa-comment-dots"><a href="/Contacto/Contacto.html" title="Contacto">Contacto</a></i></li>
+                    <li onmouseover="mostrarMenu()"><a href="#" id="boton-menu" title="Esconder Menu"><i class="fa-solid fa-arrow-left fa-bounce"></i></a></li>
+                    <!--Enlaces para Matemáticas , Lengua y Geografía estaran en la Pagina Aprender -->
+                </ul>
+                <img src="/img/img-nav.png" alt="Descripción de la imagen" class="nav-image">
+
         </nav>
         <div class="div-article">
             <article>
                 <section>
-                    <h2>Contenido del artículo</h2>
-                    <p>Este es el contenido principal del artículo.</p>
-                </section>
+                    <div class="div-bonus">
+                        <div>
+                            <i class="fa-solid fa-calculator fa-beat fa-3x" style="color: #9141ac;"></i></p>
+                            <p><a href="calculadora.html" title="Calculadora">Calculadora</a></p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gamepad fa-beat-fade fa-3x" style="color: #3584e4;"></i>
+                            <p><a href="Juegos.html" title="Calculadora">Juegos</a></p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-cake-candles fa-shake fa-3x" style="color: #ff7800;"></i>
+                            <p><a href="Fiesta.html" title="Calculadora">Fiesta</a></p>
+                        </div>
+                    </div>
+            </section>
             </article>
             <aside>
-                <h2>Contenido del aside</h2>
-                <p>Este es el contenido del aside.</p>
+                <div id="mi-aside-container"></div>
             </aside>
         </div>
         <div class="div-footer" align="center" ><footer>
-            <h2>Contenido del footer</h2>
-            <p >Este es el contenido del footer</p>
+            <p>
+            <a href="https://www.youtubekids.com/?hl=es" title="Youtubekids"><i class="fa-brands fa-youtube fa-2x "></i></a>
+            <a href="/Contacto/Contacto.html" title="Contacto"><i class="fa-solid fa-comments fa-2x"></i></a>
+            <a href="#" title="Juegos"><i class="fa-solid fa-gamepad fa-2x"></i></a><!-- Esto sera un futuro enlace para los miniJuegos-->      
+        </p>
         </footer></div>
     </div>
 </body>
 </html>
+

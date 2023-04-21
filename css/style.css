@@ -4,7 +4,8 @@
 
 /* Creamos Variable de colores para nuetro css */
 :root {
-    --color-1: #D61355;
+    --color-1: #790d31;
+    --color-1-0: #d61354; /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
     --color-2: #DD6E42;
     --color-3: #F94A29;
     --color-2-0: #DD6E4295;
@@ -44,6 +45,11 @@
 
 }
 
+body {
+    background-image: url('/img/fondos/221910.jpg');
+    /* background-size: cover;
+    background-position: center; */
+}
 
 
 .div-header {
@@ -57,6 +63,9 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     border: 1px solid #ccc;
     border-radius: 20px;
+    background-image: url('/img/fondos/221807.jpg');
+    /* background-size: cover;
+    background-position: center; */
 }
 
 .div-botones{
@@ -67,6 +76,8 @@
     margin: 0px;
 }
 
+
+
 nav {
     position: fixed;
     top: 40px;
@@ -74,26 +85,39 @@ nav {
     left: -250px;
     width: 200px;
     height: 50vh;
-    background-image: linear-gradient(to bottom, var(--color-2-0), var(--color-3-0));
+    background-image: url('/img/fondos/221807.jpg');
     transition: all 0.9s ease;
     border-radius: 8%;
     z-index: 1;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 20px; 
+    background-image: url('/img/fondos/221895.jpg');
+    border: 10px solid transparent;
+    border-image: url('/img/fondos/221910.jpg') 30% round;
+    border-radius: 30px;
+}
+.nav-image {
+    position: absolute;
+    top: -20px;
+    right: -60px; /*ajusta esto según el tamaño de tu imagen*/
+    height: 110%;
+    border-radius: 0 30px 30px 0; /*para redondear solo el borde derecho*/
 }
 
 nav:hover {
-    background-color:var(--color-1);
-    transition: all 5.0s ease;
+    background-color:var(--color-6);
+    transition: all 1.0s ease;
 }
 
 li:hover {
-    background-color: var(--color-2);
+    background-color:var(--color-15);
     border-radius: 100px;
     border-color: #000000;
+    border-width: 0.5px;
+    border-style: solid;
 }
 
+/* Aqui comienza el ccs de los nav y heard del html */
 .div-article {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -114,7 +138,12 @@ aside {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     border: 1px solid #ccc;
     border-radius: 20px; 
-    font-family: 'Nunito Sans', sans-serif;
+    background-image: url('/img/fondos/221895.jpg');
+    border: 10px solid transparent;
+    border-image: url('/img/fondos/221910.jpg') 30% round;
+    border-radius: 30px;
+    /* background-size: cover;
+    background-position: center; */
 } 
 
 .div-footer{
@@ -129,4 +158,8 @@ aside {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     border: 1px solid #ccc;
     border-radius: 20px;
+    background-image: url('/img/fondos/221807.jpg');
+    
+    /* background-size: cover;
+    background-position: center; */
 }

@@ -4,3 +4,17 @@ function mostrarMenu() {
     nav.style.left = nav.style.left === '-250px' ? '0' : '-250px';
     localStorage.setItem('menuOpen', nav.style.left === '0' ? 'true' : 'false');
 }
+
+
+// Acontinuacion viene la funcion de Animacion para las imagenes 
+
+
+/*
+*/
+
+fetch("/aside/aside.html")
+  .then(response => response.text())
+  .then(data => {
+    const asideContainer = document.getElementById('mi-aside-container');
+    asideContainer.innerHTML = data;
+  });

@@ -1,0 +1,9 @@
+section {
+    color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    background-image: url('/img/fondos/221895.jpg');
+    border: 10px solid transparent;
+    border-image: url('/img/fondos/221910.jpg') 30% round;
+    border-radius: 30px;
+}

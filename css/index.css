@@ -1,0 +1,108 @@
+/* importacio de Fonts de Google */
+@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+/* Creamos Variable de colores para nuetro css */
+:root {
+    --color-1: #790d31;
+    --color-1-0: #d61354; /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
+    --color-2: #DD6E42;
+    --color-3: #F94A29;
+    --color-2-0: #DD6E4295;
+    --color-3-0: #F94A2995;
+    --color-4: #FCE22A;
+    --color-5: #BEE7E8;
+    --color-6: #30E3DF;
+    --color-7: #000000;
+    --color-8: #A9A9A9;
+    ---color-9: #D2B48C;
+    --color-10: #C0C0C0;
+    --color-11: #FFD700;
+    --color-12: #D3D3D3;
+    --color-13: #FFFFFF;
+    --color-14: #87CEEB;
+    --color-15: #00CED1;
+    --color-16: #00FF7F;
+    --color-17: #7FFF00;
+    --color-18: #FFE5B4;
+    --color-19: #FF69B4;
+    --color-20: #800080;
+    --color-21: #FFA500;
+    --color-22: #FF0000;
+    --color-23: #FFFF00;
+    --color-24: #00FF00;
+    --color-25: #0000FF;
+    --color-26: #E6E6FA;
+}
+/*
+Plantenado definiciones 
+*/
+* {
+padding: 0%;
+margin: 0%;
+}
+a {
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 10% 60% 30%  ;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas:
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+    background-image: url('/img/fondos/221910.jpg');
+  font-family: 'Schoolbell', cursive;
+  background-size: cover;
+}
+
+/* Aqui Inicia el Header */
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+section {
+  grid-area: section;
+  font-size:larger;
+  margin: 2%;
+
+}
+aside {
+  grid-area: aside;
+  margin: 6%;
+}
+footer {
+  grid-area: footer;
+}
+
+img{
+  display: block;
+  text-align: center;s
+}
+
+/* Contenedores de Selecciones No deben ser quitados trabajan con el JavaS.*/
+
+.contenedor {
+  /* display: none; */
+}
+
+.contenedor.activo {
+  /* display: block; */
+}
+
+
+/* medidas 
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+*/

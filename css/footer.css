@@ -1,0 +1,31 @@
+.div-footer {
+    grid-area: footer;
+    background-image: url('/img/fondos/221807.jpg');
+    color: white;
+    box-shadow: auto rgba(0, 0, 0, 0.3);
+    border: auto solid #7a7777;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "div-boton1 div-boton2 div-boton3"
+    ;
+    padding: auto;
+    margin: auto;
+    width: auto;
+    height: 100px;
+}
+
+.div-boton1{
+    padding: auto;
+    margin: auto;
+}
+.div-boton2{
+    padding: auto;
+    margin: auto;
+}
+.div-boton3{
+    padding: auto;
+    margin: auto;
+}

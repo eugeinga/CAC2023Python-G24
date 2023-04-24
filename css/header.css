@@ -1,0 +1,31 @@
+.div-header {
+    grid-area: header;
+    background-image: url('/img/fondos/221807.jpg');
+    box-shadow: auto rgba(0, 0, 0, 0.3);
+    border: auto solid #7a7777;
+    border-radius: 10px;
+    /* Aqui encontraras el codigo del Logo */
+    display: grid;
+    grid-template-columns: 1fr 9fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "logo titulo";
+    padding: auto;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.logo{
+
+}
+
+.div-botones{
+    padding: auto;
+    margin: auto;
+}
+
+.titulo{
+    padding: auto;
+    margin: auto;
+}

@@ -7,8 +7,10 @@
         <meta name="description" content="Nuestro sitio web está diseñado para ayudar a los niños a aprender mientras se divierten. Encuentra recursos educativos divertidos y estimulantes para tus hijos.">
         <meta name="keywords" content="EducaKids">
         <link rel="stylesheet" type="text/css" href="/css/index.css">
+        <link rel="stylesheet" type="text/css" href="/css/form.css">
         <script type="text/javascript" src="/js/index.js"></script>
         <script type="text/javascript" src="/js/nav.js"></script>
+        
 
         <!-- Aqui inicia las llamadas de fontawesome -->
         <link href="/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
@@ -32,22 +34,47 @@
                 <div class="header-botones">
                     <p><a href="#" onmouseover="mostrarMenu()" title="Abrir Menu"><i class="fa-solid fa-bars fa-bounce fa-3x"></i></a></p>
                 </div>
-                <div>
-                    <h2 align="center">Contacto</h2>
-                        <br>
-                        <p>    Información de contacto básica: Incluya la dirección de correo electrónico de la empresa, el número de teléfono, la dirección física y cualquier otra información de contacto relevante.
-                            Formulario de contacto: un formulario de contacto es una forma sencilla y conveniente para que los visitantes del sitio web se comuniquen con usted. Asegúrese de que el formulario de contacto incluya campos para el nombre, la dirección de correo electrónico y el mensaje.
-                        
-                            Mapa de ubicación: si su negocio tiene una ubicación física, es una buena idea incluir un mapa de Google Maps o un mapa interactivo en su página de contacto para que los visitantes puedan encontrar fácilmente su ubicación.
-                        
-                            Horario de atención: si su negocio tiene un horario de atención específico, asegúrese de incluirlo en la página de contacto para que los visitantes sepan cuándo pueden contactarlo.
-                        
-                            Enlaces a las redes sociales: si su empresa tiene perfiles en redes sociales, incluya enlaces a las mismas en su página de contacto.
-                        
-                            Información adicional: dependiendo del tipo de negocio, es posible que desee incluir información adicional en su página de contacto, como políticas de devolución o información sobre cómo hacer una cita.</p>
-                        <br>
+                <br>
+                <br>
+                <div class="TablaUno">
+                  <form action="validacion.html" method="POST" name="MyForm" onsubmit="return cargarDatos()">                    <table>
+                      <caption>
+                        <strong>Datos</strong>
+                      </caption>
+                      <tbody>
+                        <tr>
+                          <td><label for="nombre">Nombre:</label></td>
+                          <td><input type="text" name="nombre" id="nombre" maxlength="20" required></td>
+                        </tr>
+                        <tr>
+                          <td><label for="apellido">Apellido:</label></td>
+                          <td><input type="text" name="apellido" id="apellido" maxlength="25" required></td>
+                        </tr>
+                        <tr>
+                          <td><label for="edad">Edad:</label></td>
+                          <td><input type="number" name="edad" id="edad" required></td>
+                        </tr>
+                        <tr>
+                          <td><label for="dni">DNI:</label></td>
+                          <td><input type="number" name="dni" id="dni" required></td>
+                        </tr>
+                        <tr>
+                          <td><label for="email">Correo Electrónico:</label></td>
+                          <td><input type="email" name="email" id="email" required></td>
+                        </tr>
+                        <tr>
+                          <td><label for="texto">Mensaje:</label></td>
+                          <td><textarea name="texto" id="texto"></textarea><br></td>
+                        </tr>
+                        <tr>
+                          <td colspan="2"><button type="submit">Enviar</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
                 </div>
-                    </section>
+                <script type="text/javascript" src="/js/form.js"></script>
+                </section>
         <footer>
             <div id="footer-container"></div>
         </footer>

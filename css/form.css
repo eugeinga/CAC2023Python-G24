@@ -1,0 +1,55 @@
+
+
+.TablaUno {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: auto;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: darkslategray;
+  }
+  
+  .TablaUno caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .TablaUno td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .TablaUno td:first-child {
+    font-weight: bold;
+    width: 30%;
+    text-align: right;
+  }
+  
+  .TablaUno input[type="text"],
+  .TablaUno input[type="number"],
+  .TablaUno input[type="email"] {
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #0216cf31;
+  }
+  
+  .TablaUno button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .TablaUno button:hover {
+    background-color: #3e8e41;
+  }
+  

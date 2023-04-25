@@ -36,6 +36,7 @@
 /*
 Plantenado definiciones 
 */
+
 * {
 padding: 0%;
 margin: 0%;
@@ -88,14 +89,12 @@ img{
   text-align: center;s
 }
 
-/* Contenedores de Selecciones No deben ser quitados trabajan con el JavaS.*/
 
-.contenedor {
-  /* display: none; */
-}
-
-.contenedor.activo {
-  /* display: block; */
+section iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 505;
 }
 
 

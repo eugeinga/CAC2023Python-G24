@@ -7,13 +7,14 @@ section {
     border-image: url('/img/fondos/221910.jpg') 30% round;
     border-radius: 30px;
     padding: 2%;
-    text-align: center;
 }
 
 hr {
     border-style: groove;
 }
 
-iframe{
+
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
-}
+  }
+

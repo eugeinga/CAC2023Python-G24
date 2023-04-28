@@ -7,7 +7,7 @@
     max-width: 600px;
     margin: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    color: darkslategray;
+    color: rgb(18, 99, 99);
   }
   
   .TablaUno caption {
@@ -36,7 +36,7 @@
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #0216cf31;
+    background-color: #505edab2;
   }
   
   .TablaUno button {
@@ -53,3 +53,19 @@
     background-color: #3e8e41;
   }
   
+
+  @media screen and (min-width:640px){
+
+    .TablaUno{
+      max-width:fit-content;
+      max-height:max-content ;
+    }
+  }
+
+  @media screen and (min-width:360px){
+
+    .TablaUno{
+      max-width:auto;
+      max-height:200px ;
+    }
+  }

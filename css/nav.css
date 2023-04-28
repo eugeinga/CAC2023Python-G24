@@ -46,3 +46,35 @@ li:hover {
   margin: 0;
   padding: 0;
 }
+
+
+
+@media screen and (min-width:1920px){
+
+  nav {
+    height: 25vh;
+  }
+
+} /* desktop de alta resolución: 1920 x 1080 */
+
+@media screen and (min-width:768px) and (max-width:1024px){
+  nav {
+    height: 25vh;
+  }
+} /* Tableta: 768 x 1024 */
+
+/* Movil */
+
+@media screen and (max-width: 640px){
+
+  nav {
+    height: 70vh;
+  }
+
+}
+
+@media screen and (max-width: 360px){
+  nav {
+    height: 45vh;
+  }
+} 

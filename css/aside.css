@@ -2,7 +2,14 @@ a.no-underline {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  margin: 10px;
+  margin: auto;
+  padding: auto;
+}
 
+/*
 .div-aside {
   color: black;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
@@ -17,26 +24,19 @@ a.no-underline {
   grid-template-areas:
     "publicidad-1"
     "publicidad-2";
-  max-width: 500px;
+  max-width: 100%;
   max-height: auto;
 }
+*/
 
-.div-aside img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
+@media screen and (min-width:1920px){
 
-.publicidad-1 {
-  grid-area: publicidad-1;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
+} /* desktop de alta resolución: 1920 x 1080 */
 
-.publicidad-2 {
-  grid-area: publicidad-2;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
+@media screen and (min-width:768px) and (max-width:1024px){
+
+} /* Tableta: 768 x 1024 */
+
+@media screen and (max-width: 360px){
+
+} /* Movil */

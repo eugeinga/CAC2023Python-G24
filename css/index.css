@@ -1,7 +1,32 @@
+/* 
+Las unidades flexibles (vw y vh o vmin y vmax) son relativas al tamaño del
+ancho o alto del viewport (ventana gráfica, región visible de la página Web en el
+navegador, no el body).
+● vw: viewport width. Por ejemplo, si decimos que un div debe medir 50vw, es
+equivalente al 50% del ancho total del viewport.
+● vh: viewport height. Por ejemplo, si definimos qué un div mide 50vh y el alto
+del viewport es 800px, nuestro div medirá 400px.
+
+Una forma de mitigar el problema mencionado consiste en utilizar las propiedades
+hermanas de width: min-width y max-width; y las propiedades hermanas de height:
+min-height y max-height. Con estas propiedades, en lugar de establecer un tamaño
+fijo, establecemos límites máximos y mínimos, donde el ancho o alto de la caja queda
+Desbordamiento
+
+
+Puede ocurrir que apliquemos un tamaño de alto y ancho a un elemento HTML,
+pero su contenido de texto sea tan grande que no quepa dentro de la caja.
+En ese caso lo que ocurre es que el contenido se desborda. Podemos modificar
+este comportamiento con la propiedad de CSS overflow o con alguna de sus
+propiedades específicas overflow-x u overflow-y +infocomprendido entre esos valores.
+
+*/
+
 /* importacio de Fonts de Google */
 @import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
 /* Creamos Variable de colores para nuetro css */
+
 :root {
     --color-1: #790d31;
     --color-1-0: #d61354; /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
@@ -33,6 +58,7 @@
     --color-25: #0000FF;
     --color-26: #E6E6FA;
 }
+
 /*
 Plantenado definiciones 
 */
@@ -48,6 +74,8 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 body {
@@ -73,7 +101,8 @@ nav {
 section {
   grid-area: section;
   font-size:larger;
-  margin: 2%;
+  margin: 5%;
+  margin-bottom: 10%;
 
 }
 aside {
@@ -86,15 +115,15 @@ footer {
 
 img{
   display: block;
-  text-align: center;s
+  text-align: center;
 }
 
 
-section iframe {
+section iframe{
   top: 0;
   left: 0;
   width: 100%;
-  height: 505;
+  height: 400px;
 }
 
 
@@ -106,6 +135,49 @@ section iframe {
 @media screen and (max-width: 991px) and (min-width: 768px) {
 }
 
-@media screen and (max-width: 767px) {
 }
+*/
+@media screen and (min-width:1920px){
+  section iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+  }
+  
+} /* desktop de alta resolución: 1920 x 1080 */
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+} /* Tableta: 768 x 1024 */
+
+@media screen and (max-width: 360px){
+
+  section iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+} /* Movil */
+
+@media screen and (max-width: 640px){
+
+}
+
+
+/*
+Tamaños de pantalla comunes
+
+    Móvil: 360 x 640
+    Móvil: 375 x 667
+    Móvil: 360 x 720
+    iPhone X: 375 x 812
+    Pixel 2: 411 x 731
+    Tableta: 768 x 1024
+    Un ordenador portátil: 1366 x 768
+    Un ordenador portátil o 
+    desktop de alta resolución: 1920 x 1080
+
 */

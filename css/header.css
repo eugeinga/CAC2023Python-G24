@@ -29,3 +29,56 @@
     padding: auto;
     margin: auto;
 }
+
+@media screen and (min-width:1920px){
+
+  } /* desktop de alta resolución: 1920 x 1080 */
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+.logo {
+  max-width: 150%;
+  margin: 80px;
+  margin: 0;
+  padding: 0;
+  width: 400% ;
+  height: 100%;
+}
+} /* Tableta: 768 x 1024 */
+  
+
+
+
+@media screen and (max-width: 640px){
+  .logo {
+    max-width: 250%;
+    margin: 80px;
+    margin: 0;
+    padding: 0;
+    width: 400% ;
+    height: 100%;
+  }
+
+  .titulo i {
+    font-size: 3.0rem;
+  }
+
+}
+
+@media screen and (max-width: 360px){
+
+  .titulo i {
+    font-size: 1.2rem;
+  }
+
+
+  .logo {
+    max-width: 250%;
+    margin: 80px;
+    margin: 0;
+    padding: 0;
+    width: 400% ;
+    height: 100%;
+  }
+
+}

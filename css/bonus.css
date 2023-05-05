@@ -1,0 +1,16 @@
+
+section img {
+  text-align: center;
+}
+
+.section-bonus img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
+
+  .centrar-imagen {
+    display: block;
+    margin: 0 auto;
+  }
+  

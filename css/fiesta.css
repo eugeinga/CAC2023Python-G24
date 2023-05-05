@@ -1,0 +1,75 @@
+:root {
+    --color-1: #790d31;
+    --color-1-0: #d61354; /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
+    --color-2: #DD6E42;
+    --color-3: #F94A29;
+    --color-2-0: #DD6E4295;
+    --color-3-0: #F94A2995;
+    --color-4: #FCE22A;
+    --color-5: #BEE7E8;
+    --color-6: #30E3DF;
+    --color-7: #000000;
+    --color-8: #A9A9A9;
+    ---color-9: #D2B48C;
+    --color-10: #C0C0C0;
+    --color-11: #FFD700;
+    --color-12: #D3D3D3;
+    --color-13: #FFFFFF;
+    --color-14: #87CEEB;
+    --color-15: #00CED1;
+    --color-16: #00FF7F;
+    --color-17: #7FFF00;
+    --color-18: #FFE5B4;
+    --color-19: #FF69B4;
+    --color-20: #800080;
+    --color-21: #FFA500;
+    --color-22: #FF0000;
+    --color-23: #FFFF00;
+    --color-24: #00FF00;
+    --color-25: #0000FF;
+    --color-26: #E6E6FA;
+}
+
+.presupuesto {
+font-family: 'Courier New', Courier, monospace;
+background-color:var(--color-18);
+color: var(--color-8);
+padding: 10%;
+margin: 10%;
+text-align:center;
+border-radius: 5%;
+color: var(--color-20);
+background-image:url(/img/fondos/v935-aum-16.jpg);
+background-size:cover;
+}
+
+label {
+    text-align:left;
+    color: var(--color-20);
+}
+
+input {
+    border-style:solid;
+    background-color:var(--color-1);
+    color: rgb(255, 255, 255);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: larger;
+    text-align: center;
+    border-radius:3px;
+    border-style:initial;
+}
+
+button {
+    background-color:#790d31 ;
+    padding: 2%;
+    border: #000000;
+    border-radius: 5%;
+    color: var(--color-12);
+}
+
+button:hover{
+    background-color: var(--color-17);
+    color:var(--color-7);
+    text-transform: capitalize;
+    text-transform: ;
+}

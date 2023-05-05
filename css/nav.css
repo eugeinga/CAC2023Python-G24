@@ -46,7 +46,22 @@ li:hover {
   margin: 0;
   padding: 0;
 }
+li:hover {
+  animation: cambia-opacidad 1s infinite;
+  background-color:var(--color-15);
+}
 
+@keyframes cambia-opacidad {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 @media screen and (min-width:1920px){

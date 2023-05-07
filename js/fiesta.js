@@ -162,3 +162,10 @@ function calcularTotal() {
 
   document.getElementById("total").innerHTML = "Total: $ " + total.toFixed(2);
 }
+
+var botonBorrar = document.getElementById("borrar");
+botonBorrar.addEventListener("click", borrarFormulario);
+
+function borrarFormulario() {
+    document.getElementById("miFormulario").reset();
+}

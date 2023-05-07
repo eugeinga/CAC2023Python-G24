@@ -10,12 +10,13 @@
         <link rel="stylesheet" type="text/css" href="/css/fiesta.css">
         <script type="text/javascript" src="/js/index.js"></script>
         <script type="text/javascript" src="/js/nav.js"></script>
+        <!-- Agrega la biblioteca de Pdfcrowd para JavaScript -->
         <!-- Aqui inicia las llamadas de fontawesome -->
         <link href="/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
         <link href="/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
         <link href="/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
         <link rel="icon" href="/img/icono.png">
-    <script type="text/javascript" src="/js/fiesta.js"></script>
+    
 </head>
 <body>
     <header>
@@ -36,7 +37,7 @@
             <br>
             <br>
             <div class="Presupuesto">
-                <form>
+                <form id="miFormulario" action="recibo.html" method="POST" name="Presupuesto" >
                     <h2>Servicio a Contratar</h2>
                     <div>
                     <label for="ComboBase" > Combo Base  $30,000.00</label>
@@ -231,13 +232,17 @@
                         <tfoot></tfoot>
                     </table>
                     <button type="button" onclick="calcularTotal()">Calcular total</button>
-                    <p id="total"></p>
+                    <button type="button" id="borrar">Borrar todo</button>
+                    <button> Generar Recibo </button>
+
+                    <h3 id="total"></h3>
                     <br><br><br>
+                    <script type="text/javascript" src="/js/fiesta.js"></script>
                     <h3>Detalles de Los Servicios </h3>
                     <p><b>Combo Base : </b> Viene Incluido 2 hs de animacion para 20 ninos + 20 adultos</p><br><br>
                     <p><b>Combo Super : </b> Esta incluido el Combo Base + Snaks para Ninos </p><br><br>
                     <p><b>Combo Full : </b> Esta incluido Combo Super + snaks para adultos</p><br><br>
-                  </form>
+                </form>
             </div>
         </section>
     <footer>

@@ -76,3 +76,13 @@
 .Presupuesto label{
     font-size: 14px;
 }
+
+.datosCliente{
+    text-align: left;
+}
+
+.datosCliente input{
+    width: 50%;
+    height: 20px;
+    text-align: center;
+}

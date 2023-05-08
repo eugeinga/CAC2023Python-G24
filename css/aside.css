@@ -30,6 +30,10 @@
   --color-26: #E6E6FA;
 }
 
+.div-aside {
+  background-color: rgb(170, 230, 205);
+}
+
 a.no-underline {
   text-decoration: none;
 }
@@ -68,7 +72,6 @@ a.no-underline {
 .div-aside p:hover{
   color:var(--color-7);
 }
-
 
 
 /*

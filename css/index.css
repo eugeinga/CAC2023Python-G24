@@ -13,7 +13,6 @@ min-height y max-height. Con estas propiedades, en lugar de establecer un tamañ
 fijo, establecemos límites máximos y mínimos, donde el ancho o alto de la caja queda
 Desbordamiento
 
-
 Puede ocurrir que apliquemos un tamaño de alto y ancho a un elemento HTML,
 pero su contenido de texto sea tan grande que no quepa dentro de la caja.
 En ese caso lo que ocurre es que el contenido se desborda. Podemos modificar
@@ -22,7 +21,7 @@ propiedades específicas overflow-x u overflow-y +infocomprendido entre esos val
 
 */
 
-/* importacio de Fonts de Google */
+/* importacion de Fonts de Google */
 @import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
 /* Creamos Variable de colores para nuetro css */
@@ -80,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   display: grid;
-  grid-template-columns: 10% 60% 30%  ;
+  grid-template-columns: 10% 70% 20%  ;
   grid-template-rows: 10% 80% 10%;
   grid-template-areas:
     "header header header"
@@ -107,7 +106,7 @@ section {
 }
 aside {
   grid-area: aside;
-  margin: 6%;
+  margin: 0%;
 }
 footer {
   grid-area: footer;

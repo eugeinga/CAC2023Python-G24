@@ -1,23 +1,20 @@
 .div-header {
     grid-area: header;
     background-image: url('/img/fondos/221807.jpg');
-    box-shadow: auto rgba(0, 0, 0, 0.3);
-    border: auto solid #7a7777;
-    border-radius: 10px;
+    /* box-shadow: auto rgba(0, 0, 0, 0.3); */
+    /* border: auto solid #7a7777; */
+    /* border-radius: 10px; */
     /* Aqui encontraras el codigo del Logo */
     display: grid;
-    grid-template-columns: 1fr 9fr ;
+    /* grid-template-columns: 1fr 9fr ; */
+    grid-template-columns: 50px auto 50px;
     grid-template-rows: auto;
     grid-template-areas:
     "logo titulo";
-    padding: auto;
-    margin: auto;
-    width: auto;
-    height: auto;
-}
-
-.logo{
-
+    /* padding: auto; */
+    /* margin: auto; */
+    /* width: auto; */
+    /* height: auto; */
 }
 
 .div-botones{
@@ -60,6 +57,7 @@
   }
 
   .titulo i {
+    font-family: waltograph, 'Shadows Into Light', cursive;
     font-size: 3.0rem;
   }
 
